@@ -284,7 +284,8 @@
            #:url-decode
            #:url-encode
            #:user-agent
-           #:within-request-p))
+           #:within-request-p
+           #:*close-hunchentoot-stream*))
 
 ;; see asdf system definition
 (defparameter hunchentoot:*hunchentoot-version*
