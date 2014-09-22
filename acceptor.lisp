@@ -599,11 +599,7 @@ handler."
                     (when *headers-sent*
                       (setq *finish-processing-socket* t))
                     (throw 'handler-done
-                      (values nil cond (get-backtrace)))))
-                 (warning
-                  (lambda (cond)
-                    (when *log-lisp-warnings-p*
-                      (log-message* *lisp-warnings-log-level* "~A" cond)))))
+                      (values nil cond (get-backtrace))))))
     (with-debugger
       (acceptor-dispatch-request *acceptor* *request*))))
 
