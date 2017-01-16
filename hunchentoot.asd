@@ -46,6 +46,7 @@ for diagnostic output.")
   BORDEAUX-THREADS.  It supports HTTP 1.1, serves static files, has a
   simple framework for user-defined handlers and can be extended
   through subclassing."
+  :license "BSD-2-Clause"
   :depends-on (:chunga
                :cl-base64
                :cl-fad
